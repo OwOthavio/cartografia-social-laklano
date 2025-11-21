@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cartografia Social AR</title>
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   </head>
   <body>
     <a-scene embedded arjs="patternRatio:0.80">
-<a-marker type="pattern" url="https://raw.githubusercontent.com/OwOthavio/cartografia-social-laklano/494d831d59bcd6cbf3fe8b3b153341212e062439/marker.patt">
-      <a-box position="0 0 0" rotation="0 0 0" color="#4CC3D9"></a-box>
-  <a-gltf-model src="modelo.gltf"></a-gltf-model>
-  </a-marker>
-  <a-entity camera></a-entity>
+      <a-marker 
+        type="pattern" 
+        url="https://raw.githubusercontent.com/OwOthavio/cartografia-social-laklano/494d831d59bcd6cbf3fe8b3b153341212e062439/marker.patt">
+        <!-- Remove a-box if only the glTF model is needed, or move as desired -->
+        <a-gltf-model src="modelo.gltf" position="0 0 0"></a-gltf-model>
+      </a-marker>
+      <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
