@@ -9,7 +9,10 @@
       <a-marker 
         type="pattern" 
         url="https://raw.githubusercontent.com/OwOthavio/cartografia-social-laklano/494d831d59bcd6cbf3fe8b3b153341212e062439/marker.patt">
-        <a-gltf-model src="modelo.gltf" position="0 0 0"></a-gltf-model>
+  <a-assets>
+    <a-asset-item id="modelo" src="/path/to/modelo.gltf"></a-asset-item>
+  </a-assets>
+  <a-entity gltf-model="#tree"></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
