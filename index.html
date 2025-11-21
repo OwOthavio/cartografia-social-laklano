@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- A-Frame library -->
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <!-- AR.js for A-Frame -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   </head>
-  <body>
-    <a-scene embedded arjs="patternRatio:0.80">
-      <!-- Place a-assets here, outside a-marker -->
+    <a-scene embedded 
+      arjs="sourceType: webcam; patternRatio: 0.8; debugUIEnabled: false;"
+      vr-mode-ui="enabled: false"
+      renderer="logarithmicDepthBuffer: true;"
+      >
+      
       <a-assets>
         <a-asset-item id="modelo" src="BoxTextured.gltf"></a-asset-item>
       </a-assets>
-
+      
       <a-marker 
-        type="pattern" 
-        url="marker.patt">
-        <a-entity gltf-model="#modelo"></a-entity>
+        type="pattern"
+        url="marker.patt"
+        emitevents="true"
+      >
+        <a-entity 
+          gltf-model="#modelo"
+          scale="1 1 1"
+          position="0 0 0"
+          rotation="0 0 0"
+        ></a-entity>
       </a-marker>
       
       <a-entity camera></a-entity>
