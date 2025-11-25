@@ -1,0 +1,3 @@
+Projeto feito por João Othávio Laureano com orientação do Professor Doutor Douglas Ladik Antunes como parte do projeto de extensão Usos Sociais do Desenho no Centro de Artes, Design e Moda (CEART) da Universidade do Estado de Santa Catarina (UDESC).
+O modelo foi feito utilizando o software livre Qgis com bases fornecidas pela EPAGRI-CIRAM através de sua mapoteca digital, junto do Qgis foi usado o plugin Qgis2threejs para transformar a base da EPAGRI em um modelo 3D.
+Após o modelo 3D ter sido gerado, foi utilizado o software Blender para modificações como a adição de uma seta de norte geográfico
