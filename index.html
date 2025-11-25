@@ -2,10 +2,13 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
+
   </head>
   <body>
-    <a-scene embedded arjs="patternRatio:0.80">
+    <a-scene embedded 
+      renderer="logarithmicDepthBuffer: true;"
+      arjs="patternRatio:0.80">
       <!-- Place a-assets here, outside a-marker -->
       <a-assets>
         <a-asset-item id="modelo" src="modelo.glb"></a-asset-item>
